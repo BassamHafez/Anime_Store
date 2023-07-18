@@ -1,0 +1,19 @@
+.categort_type{
+    opacity:.8;
+    transition: all .5s;
+    cursor: pointer;
+}
+.categort_type:hover{
+    opacity:1;
+}
+.home_title{
+    color:#9E1D1C;
+}
+.mystery_box img{
+    border-radius: 10px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.mystery_box img:hover{
+    transform: scale(1.1, 1.1);
+}

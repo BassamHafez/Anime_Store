@@ -1,0 +1,13 @@
+.cover{
+    background-image: url(../../../images/FUNKO-B2G1-DESKTOP.jpg);
+    background-size: cover;
+    height:60vh;
+    background-position: 50% 50%;
+}
+
+
+@media screen and (max-width:768px) {
+    .cover{
+        background-image: url(../../../images/FUNKO-B2G1-MOB.jpg);
+    }
+}
