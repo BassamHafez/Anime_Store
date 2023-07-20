@@ -1,7 +1,5 @@
-import React,{useState} from 'react';
-import style from './Items.module.css';
+import React from 'react';
 import MainTitle from '../../UI/MainTitle';
-import Button from '../../UI/Button';
 import f1 from '../../../images/loffy.jpg';
 import f11 from '../../../images/loffy_2.png';
 import f2 from '../../../images/joy_boy.jpg';
@@ -29,6 +27,7 @@ import st22 from '../../../images/spy x family_st2.jpg';
 import one_box from '../../../images/one piece box set.jpg';
 import hun_box from '../../../images/hunter box set.jpg';
 import att_box from '../../../images/att box set.jpg';
+import ProductItem from './ProductItem';
 
 const  DUMMY_PRODUCTS = [
     // figures
@@ -182,39 +181,9 @@ const  DUMMY_PRODUCTS = [
 
 const Items =()=>{
 
-const [hoverProduct,setHoverProduct]= useState(null);
-
-const handleMouseEnter=(productId)=>{
-    setHoverProduct(productId);
-}
-
-const handleMouseLeave=()=>{
-    setHoverProduct(null)
-}
-
-
 const products =DUMMY_PRODUCTS.map((product)=>
-
-
-
-    <div className={`${style.category} col-md-4`} key={product.id} onMouseEnter={()=>handleMouseEnter(product.id)} onMouseLeave={()=>handleMouseLeave} >
-        <div className={`${style.category_container} my-5`}>
-            <div className={style.prod_img_div}>
-                <img src={product.src_two?hoverProduct===product.id?product.src_two:product.src_one:product.src_one} className={style.prod_img} alt={product.name}/>
-                <div className={style.img_layer}>
-                    <Button name='view details'/>
-                </div>
-            </div>
-            
-            <div className={style.caption}>
-                <h4>{product.name}</h4>
-                <span> Price: {product.price}$</span>
-            </div>
-            <div>
-                <Button name='ADD TO CARD'/>
-            </div>
-        </div>
-    </div>)
+    <ProductItem product={product}/>
+    )
 
 return(
     <section>
