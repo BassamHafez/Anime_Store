@@ -1,0 +1,13 @@
+.nav_btn_icons{
+    font-size: 20px;
+    margin-inline:15px;
+    padding:10px 20px;
+    border:1px solid #9E1D1C;
+    border-radius: 10px;
+    color:#9E1D1C;
+    transition: all .5s;
+}
+.nav_btn_icons:hover{
+    background-color: #9E1D1C;
+    color: white;
+}

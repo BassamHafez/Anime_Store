@@ -1,7 +1,10 @@
 import React from 'react'
 // import { NavLink } from 'react-router-dom'
 import style from './Nav.module.css';
-import logo from '../../../images/logo.png'
+import HeaderCardButton from './HeaderCardButton.js';
+import logo from '../../../images/logo.png';
+
+
 const Nav = () => {
   return (
     <nav className="navbar navbar-expand-lg">
@@ -25,12 +28,7 @@ const Nav = () => {
         <div className='ms-auto me-5'>
              <button className={style.nav_btn_icons}>  <i className="fa-solid fa-moon"></i></button> 
              <button className={style.nav_btn_icons}><i className="fa-solid fa-user"></i></button>
-             <button className={`${style.nav_btn_icons} position-relative`} type="button">
-                 <i class="fa-solid fa-cart-shopping "></i>
-                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                0
-                </span>        
-            </button>
+              <HeaderCardButton/>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React ,{Fragment} from 'react'
 import style from './HomeMainBody.module.css';
 import Button from '../../UI/Button.js';
+import MainTitle from '../../UI/MainTitle';
 import DBZ from '../../../images/original-DB-091211.webp';
 import attack_on_titans from '../../../images/original-attack_on_titans-091308.webp';
 import avatar from '../../../images/original-avatar-092709.webp';
@@ -22,6 +23,7 @@ const HomeMainBody = () => {
   return (
     <Fragment>
         <section className='my-5'>
+          <MainTitle name='Discover by type'/>
             <div className='container-fluid'>
                 <div className='row'>
                     <div  className={`${style.categort_type} col-md-2`}>
@@ -65,7 +67,7 @@ const HomeMainBody = () => {
         </section>
 
         <section className='my-5'>
-            <h2 className={`${style.home_title} my-5 ms-2`}>DISCOVER OUR MYSTERY BOX</h2>
+            <MainTitle name='Discover our mystery box'/>
             <div className='container'>
                 <div className='row'>
                     <div className={`${style.mystery_box} col-md-3`}>
