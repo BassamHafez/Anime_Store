@@ -1,0 +1,17 @@
+/* .off_canvas{
+ 
+} */
+
+.off_canvas_header{
+    background-color:#9E1D1C;
+    color: white;
+    font-weight: 900;
+}
+
+.offcanvas_footer{
+    padding: 16px 16px;
+    border-top: 1px solid #dee2e6;
+}
+.offcanvas_footer h5{
+    font-weight: 800;
+}
