@@ -182,7 +182,7 @@ const  DUMMY_PRODUCTS = [
 const Items =()=>{
 
 const products =DUMMY_PRODUCTS.map((product)=>
-    <ProductItem product={product}/>
+    <ProductItem key={product.id} id={product.id} product={product}/>
     )
 
 return(

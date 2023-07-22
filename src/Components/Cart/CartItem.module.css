@@ -1,0 +1,56 @@
+.offcanvas_body_cart{
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+    padding:20px;
+    box-shadow: 0px 5px 10px black;
+    position: relative;
+}
+.offcanvas_body_cart_caption h5{
+    color: #9E1D1C;
+    font-weight: 700;
+}
+.plus, .minus{
+    background-color: rgb(209, 203, 203);
+    padding: 0px 10px;
+    border-radius:2px;
+    margin-inline: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    transition: all .5s;
+}
+
+
+
+
+.offcanvas_body_cart_caption span{
+    color: rgb(131, 126, 126);
+}
+
+.trush{
+    border: none;
+    padding: 0;
+}
+
+.trash_container{
+    position: absolute;
+    top:5%;
+    right:3%;
+    color: rgb(150, 144, 144);
+    transition: all .5s;
+}
+
+.plus:hover,.minus:hover,.trash_container:hover{
+    transform: scale(1.2,1.2);
+    color: #9E1D1C;
+}   
+
+
+
+@media screen and (max-width:575px) {
+    .trash_container{
+        top:70%;
+        right:3%;
+        color: black;
+    }
+}
