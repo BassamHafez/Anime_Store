@@ -15,7 +15,7 @@ const CartItem = (props) => {
             <h6>{`${props.product.price}$`}</h6>
             <div className='d-flex justify-content-center align-items-center mt-5'>
                 <button onClick={props.onAdd}  className={style.plus}><i className='fas fa-plus'></i></button>
-                <span>{props.amount}</span>
+                <span>{props.product.amount}</span>
                 <button onClick={props.onRemove} className={style.minus}><i className='fas fa-minus'></i></button>
             </div>
             <div className={style.trash_container}>

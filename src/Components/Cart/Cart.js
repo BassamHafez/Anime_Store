@@ -12,16 +12,16 @@ const totalAmountCtx = `Total Amount :${cartCtx.totalAmount}$`;
 const hasProducts= cartCtx.products.length >0;
 
 const onAddHandler=(item)=>{
-    
+    cartCtx.addProduct({...item,amount:1})
 }
 const onRemoveHandler=(id)=>{
-
+  cartCtx.removeProduct(id);
 }
 
 
 const ctxProducts = cartCtx.products.map((product)=>
 {
-   return <CartItem onAdd={onAddHandler.bind(null,product)} onRemove={onRemoveHandler.bind(null,product.id)} key={product.id} amount={product.amount} product={product}/>
+   return <CartItem onAdd={onAddHandler.bind(null,product)} onRemove={onRemoveHandler.bind(null,product.id)} key={product.id}  product={product}/>
 })
 
 
