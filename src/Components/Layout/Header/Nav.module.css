@@ -1,3 +1,11 @@
+.nav_container{
+    background-color: white;
+    min-height: 70px;
+}
+
+nav{
+    background-color: white;
+}
 .nav_logo{
     width: 80px;
     height: 50px;
@@ -14,3 +22,4 @@
 .nav_item a{
     color: #9E1D1C !important;
 }
+

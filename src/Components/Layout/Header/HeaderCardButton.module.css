@@ -11,3 +11,21 @@
     background-color: #9E1D1C;
     color: white;
 }
+.btn_effect{
+    animation: bumb 300ms ease-out;
+
+}
+@keyframes bumb {
+    0%{
+        transform: scale(1.05);
+    }
+    25%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
