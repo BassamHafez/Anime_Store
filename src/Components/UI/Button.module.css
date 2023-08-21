@@ -1,14 +1,14 @@
 .main_btn{
     background-color:#9E1D1C;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 1px solid transparent;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid transparent;
     font-weight: 600;
     transition: all .5s;
 }
 .main_btn:hover{
     background-color: white;
     color: #9E1D1C;
-    border: 1px solid #9E1D1C;
+    border: 0.0625rem solid #9E1D1C;
 }

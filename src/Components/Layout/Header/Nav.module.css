@@ -1,23 +1,23 @@
 .nav_container{
     background-color: white;
-    min-height: 70px;
+    min-height: 4.375rem;
 }
 
 nav{
     background-color: white;
 }
 .nav_logo{
-    width: 80px;
-    height: 50px;
+    width: 5rem;
+    height: 3.125rem;
 }
 
 .nav_btn_icons{
-    font-size: 20px;
-    margin-inline:15px;
+    font-size: 1.25rem;
+    margin-inline:0.9375rem;
 }
 .nav_item{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .nav_item a{
     color: #9E1D1C !important;

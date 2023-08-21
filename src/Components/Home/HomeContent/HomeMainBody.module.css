@@ -1,3 +1,4 @@
+
 .categort_type{
     opacity:.7;
     transition: all .5s;
@@ -8,10 +9,18 @@
 }
 
 .mystery_box img{
-    border-radius: 10px;
+    border-radius: 0.625rem;
     transition: all .5s;
     cursor: pointer;
 }
 .mystery_box img:hover{
     transform: scale(1.1, 1.1);
+}
+
+@media screen and (max-width:768px) {
+
+    .mystery_box{
+        margin-bottom: 10px;
+        padding: 10px;
+    }
 }

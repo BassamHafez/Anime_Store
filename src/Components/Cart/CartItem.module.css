@@ -1,8 +1,8 @@
 .offcanvas_body_cart{
-    border-radius: 20px;
+    border-radius: 1.25rem;
     background-color: rgb(240, 240, 240);
-    padding:20px;
-    box-shadow: 0px 5px 10px black;
+    padding:1.25rem;
+    box-shadow: 0rem 0.3125rem 0.625rem black;
     position: relative;
 }
 .offcanvas_body_cart_caption h5{
@@ -11,10 +11,10 @@
 }
 .plus, .minus{
     background-color: rgb(209, 203, 203);
-    padding: 0px 10px;
-    border-radius:2px;
-    margin-inline: 5px;
-    font-size: 14px;
+    padding: 0rem 0.625rem;
+    border-radius:0.125rem;
+    margin-inline: 0.3125rem;
+    font-size: 0.875rem;
     font-weight: 700;
     color: black;
     transition: all .5s;
@@ -47,7 +47,7 @@
 
 
 
-@media screen and (max-width:575px) {
+@media screen and (max-width:35.9375rem) {
     .trash_container{
         top:70%;
         right:3%;

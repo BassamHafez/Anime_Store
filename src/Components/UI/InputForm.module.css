@@ -2,8 +2,8 @@
 position: absolute;
 bottom: 120%;
 right: 10%;
- border: 1px solid #9E1D1C;
- border-radius: 5px;
+ border: 0.0625rem solid #9E1D1C;
+ border-radius: 0.3125rem;
  background-color: snow;
  text-align: center;
  color: #9E1D1C;

@@ -30,7 +30,7 @@ const ProductItem = (props) => {
 
   return (
 
-    <div className={`${style.category} col-md-4`} >
+    <div className={`${style.category} col-sm-6 col-md-4`} >
         <div className={`${style.category_container} my-5`} >
             <div className={style.prod_img_div} onMouseEnter={()=>handleMouseEnter()} onMouseLeave={()=>handleMouseLeave()}>
                 <img src={props.product.src_two?hoverProduct?props.product.src_two:props.product.src_one:props.product.src_one} className={style.prod_img} alt={props.product.name}/>

@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './CartItem.module.css';
-// import luffy from '../../images/BTS.jpg'
 
 const CartItem = (props) => {
 
@@ -19,7 +18,7 @@ const CartItem = (props) => {
                 <button onClick={props.onRemove} className={style.minus}><i className='fas fa-minus'></i></button>
             </div>
             <div className={style.trash_container}>
-                <button className={style.trash}><i className="fa-regular fa-trash-can"></i></button>
+                <button className={style.trash} onClick={props.onDelete}><i className="fa-regular fa-trash-can"></i></button>
             </div>
         </div>
     </div>

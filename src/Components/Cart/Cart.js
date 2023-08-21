@@ -17,11 +17,14 @@ const onAddHandler=(item)=>{
 const onRemoveHandler=(id)=>{
   cartCtx.removeProduct(id);
 }
+const onDeleteHandler=(id)=>{
+  cartCtx.removeSelectedProduct(id);
+}
 
 
 const ctxProducts = cartCtx.products.map((product)=>
 {
-   return <CartItem onAdd={onAddHandler.bind(null,product)} onRemove={onRemoveHandler.bind(null,product.id)} key={product.id}  product={product}/>
+   return <CartItem onDelete={onDeleteHandler.bind(null,product.id)} onAdd={onAddHandler.bind(null,product)} onRemove={onRemoveHandler.bind(null,product.id)} key={product.id}  product={product}/>
 })
 
 
@@ -35,8 +38,8 @@ const ctxProducts = cartCtx.products.map((product)=>
 
             <div className="offcanvas-body py-4">
                   <ul className='px-0'>
-                    {ctxProducts}
-                 </ul>    
+                     {ctxProducts}
+                   </ul>    
             </div>
 
             <div className={`${style.offcanvas_footer}  offcanvas-footer d-flex justify-content-evenly align-items-center`}>

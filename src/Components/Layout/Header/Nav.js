@@ -29,8 +29,6 @@ const Nav = () => {
               </li> 
             </ul>
             <div className='ms-auto me-5'>
-                <button className={style.nav_btn_icons}>  <i className="fa-solid fa-moon"></i></button> 
-                <button className={style.nav_btn_icons}><i className="fa-solid fa-user"></i></button>
                   <HeaderCardButton/>
             </div>
           </div>

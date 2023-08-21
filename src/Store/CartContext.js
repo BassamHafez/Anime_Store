@@ -4,7 +4,8 @@ const CardContext=React.createContext({
     products:[],
     totalAmount:0,
     addProduct:(product)=>{},
-    removeProduct:(id)=>{}
+    removeProduct:(id)=>{},
+    removeSelectedProduct:(id)=>{}
 });
 
 export default CardContext;

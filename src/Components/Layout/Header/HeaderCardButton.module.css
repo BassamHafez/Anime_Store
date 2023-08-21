@@ -1,9 +1,9 @@
 .nav_btn_icons{
-    font-size: 20px;
-    margin-inline:15px;
-    padding:10px 20px;
-    border:1px solid #9E1D1C;
-    border-radius: 10px;
+    font-size: 1.25rem;
+    margin-inline:0.9375rem;
+    padding:0.625rem 1.25rem;
+    border:0.0625rem solid #9E1D1C;
+    border-radius: 0.625rem;
     color:#9E1D1C;
     transition: all .5s;
 }

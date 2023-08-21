@@ -26,40 +26,40 @@ const HomeMainBody = () => {
           <MainTitle name='Discover by type'/>
             <div className='container-fluid'>
                 <div className='row'>
-                    <div  className={`${style.categort_type} col-md-2`}>
+                    <div  className={`${style.categort_type}  col-6 col-sm-3 col-md-2`}>
                         <img src={DBZ} className='w-100' alt='category_type'/>
                     </div>
-                    <div  className={`${style.categort_type} col-md-2`}>
+                    <div  className={`${style.categort_type}  col-6 col-sm-3 col-md-2`}>
                         <img src={attack_on_titans} className='w-100' alt='category_type'/>
                     </div>
-                    <div  className={`${style.categort_type} col-md-2`}>
+                    <div  className={`${style.categort_type}  col-6 col-sm-3 col-md-2`}>
                         <img src={demonslayer} className='w-100' alt='category_type'/>
                     </div>
-                    <div  className={`${style.categort_type} col-md-2`}>
+                    <div  className={`${style.categort_type}  col-6 col-sm-3 col-md-2`}>
                         <img src={avatar} className='w-100' alt='category_type'/>
                     </div>
-                    <div  className={`${style.categort_type} col-md-2`}>
+                    <div  className={`${style.categort_type}  col-6 col-sm-3 col-md-2`}>
                         <img src={evan} className='w-100' alt='category_type'/>
                     </div>
-                    <div  className={`${style.categort_type} col-md-2`}>
+                    <div  className={`${style.categort_type}  col-6 col-sm-3 col-md-2`}>
                         <img src={fullmetal} className='w-100' alt='category_type'/>
                     </div>
-                    <div  className={`${style.categort_type} col-md-2`}>
+                    <div  className={`${style.categort_type}  col-6 col-sm-3 col-md-2`}>
                         <img src={my_hero_acedm} className='w-100' alt='category_type'/>
                     </div>
-                    <div  className={`${style.categort_type} col-md-2`}>
+                    <div  className={`${style.categort_type}  col-6 col-sm-3 col-md-2`}>
                         <img src={naruto} className='w-100' alt='category_type'/>
                     </div>
-                    <div  className={`${style.categort_type} col-md-2`}>
+                    <div  className={`${style.categort_type}  col-6 col-sm-3 col-md-2`}>
                         <img src={sailormoon} className='w-100' alt='category_type'/>
                     </div>
-                    <div  className={`${style.categort_type} col-md-2`}>
+                    <div  className={`${style.categort_type}  col-6 col-sm-3 col-md-2`}>
                         <img src={pokemon} className='w-100' alt='category_type'/>
                     </div>
-                    <div  className={`${style.categort_type} col-md-2`}>
+                    <div  className={`${style.categort_type}  col-6 col-sm-3 col-md-2`}>
                         <img src={yugioh} className='w-100' alt='category_type'/>
                     </div>
-                    <div  className={`${style.categort_type} col-md-2`}>
+                    <div  className={`${style.categort_type}  col-6 col-sm-3 col-md-2`}>
                         <img src={shopall} className='w-100' alt='category_type'/>
                     </div>
                 </div>
@@ -70,16 +70,16 @@ const HomeMainBody = () => {
             <MainTitle name='Discover our mystery box'/>
             <div className='container'>
                 <div className='row'>
-                    <div className={`${style.mystery_box} col-md-3`}>
+                    <div className={`${style.mystery_box} col-sm-6 col-md-3`}>
                         <img src={mystery_bronze} className='w-100' alt='mystery-box'/>
                     </div>
-                    <div className={`${style.mystery_box} col-md-3`}>
+                    <div className={`${style.mystery_box} col-sm-6 col-md-3`}>
                         <img src={mystery_silver} className='w-100' alt='mystery-box'/>
                     </div>
-                    <div className={`${style.mystery_box} col-md-3`}>
+                    <div className={`${style.mystery_box} col-sm-6 col-md-3`}>
                         <img src={mystery_gold} className='w-100' alt='mystery-box'/>
                     </div>
-                    <div className={`${style.mystery_box} col-md-3`}>
+                    <div className={`${style.mystery_box} col-sm-6 col-md-3`}>
                         <img src={mystery_platinum} className='w-100' alt='mystery-box'/>
                     </div>
                 </div>
