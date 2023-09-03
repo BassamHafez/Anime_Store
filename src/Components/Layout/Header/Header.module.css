@@ -1,8 +1,50 @@
-.cover{
-    background-image: url(../../../images/FUNKO-B2G1-DESKTOP.jpg);
-    background-size: cover;
-    height:60vh;
-    background-position: 50% 50%;
+
+.header{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.headerBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.headerLayer{
+    background-color: rgba(0, 0, 0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 80%;
+    font-family: cursive;
+}
+.content h1{
+    font-size: 80px;
+    color: rgb(224, 224, 224);
+    font-weight: 900;
+
+}
+.content h6{
+    font-size: 20px;
+    color: rgb(219, 219, 219);;
+}
+.content button{
+    border-radius: 10px 0 10px 0;
+    font-size: 25px;
 }
 
 

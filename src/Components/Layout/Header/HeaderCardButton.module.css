@@ -4,16 +4,21 @@
     padding:0.625rem 1.25rem;
     border:0.0625rem solid #9E1D1C;
     border-radius: 0.625rem;
-    color:#9E1D1C;
+    color:white;
+    background-color: #9E1D1C;
+    margin-top: 8px;
     transition: all .5s;
 }
-.nav_btn_icons:hover{
+.numItems {
+    border: 1px dashed black;
     background-color: #9E1D1C;
+}
+.nav_btn_icons:hover{
+    background-color: #3f0404;
     color: white;
 }
 .btn_effect{
     animation: bumb 300ms ease-out;
-
 }
 @keyframes bumb {
     0%{

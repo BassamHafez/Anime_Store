@@ -1,11 +1,15 @@
-.nav_container{
-    background-color: white;
-    min-height: 4.375rem;
-}
+    .nav_container{
+        min-height: 4.375rem;
+    }
 
-nav{
-    background-color: white;
-}
+    .nav_not_colored{
+        background-color: transparent;    
+    }
+    .nav_colored{
+        background-color: rgba(0, 0, 0, 0.6) ;
+    }
+
+    
 .nav_logo{
     width: 5rem;
     height: 3.125rem;
@@ -15,11 +19,17 @@ nav{
     font-size: 1.25rem;
     margin-inline:0.9375rem;
 }
-.nav_item{
-    font-weight: 700;
-    font-size: 1.25rem;
-}
+
 .nav_item a{
-    color: #9E1D1C !important;
+    font-weight: 900;
+    color: white !important;
+    font-size: 20px;
+    font-family: cursive;
+    border-bottom: 3px solid transparent;
+    transition: all .5s;
+}
+.nav_item a:hover{
+    color:#9E1D1C !important;
+    border-bottom: 3px solid #9E1D1C;
 }
 

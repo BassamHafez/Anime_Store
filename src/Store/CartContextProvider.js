@@ -61,11 +61,19 @@ const cartReducer = (state, action) => {
   }
 
   if (action.type === "DELETE_PRODUCT") {
+    const existingCardProductIndex = state.products.findIndex(
+      (item) => item.id === action.id
+    );
+    const existingCardProduct = state.products[existingCardProductIndex];
+    const updatedTotalAmount =
+      state.totalAmount - existingCardProduct.price * existingCardProduct.amount;
     let updatedProducts = state.products.filter(
       (product) => product.id !== action.id
     );
+
     return {
       products: updatedProducts,
+      totalAmount: updatedTotalAmount,
     };
   }
 
