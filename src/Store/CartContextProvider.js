@@ -1,5 +1,5 @@
 import React, { useReducer } from "react";
-import CardContext from "./CartContext";
+import CartContext from "./CartContext";
 
 const defaultCartValue = {
   products: [],
@@ -26,7 +26,7 @@ const cartReducer = (state, action) => {
     } else {
       updatedProducts = state.products.concat(action.product);
     }
-
+    
     return {
       products: updatedProducts,
       totalAmount: updatedTotalAmount,
@@ -66,7 +66,8 @@ const cartReducer = (state, action) => {
     );
     const existingCardProduct = state.products[existingCardProductIndex];
     const updatedTotalAmount =
-      state.totalAmount - existingCardProduct.price * existingCardProduct.amount;
+      state.totalAmount -
+      existingCardProduct.price * existingCardProduct.amount;
     let updatedProducts = state.products.filter(
       (product) => product.id !== action.id
     );
@@ -80,7 +81,7 @@ const cartReducer = (state, action) => {
   return defaultCartValue;
 };
 
-const CartContextProvider = (props) => {
+const CartContextProvider = ({children}) => {
   let [cartState, dispatchCart] = useReducer(cartReducer, defaultCartValue);
 
   const addProduct = (product) => {
@@ -95,7 +96,7 @@ const CartContextProvider = (props) => {
     dispatchCart({ type: "DELETE_PRODUCT", id: id });
   };
 
-  const cardContext = {
+  const cartContext = {
     products: cartState.products,
     totalAmount: cartState.totalAmount,
     addProduct: addProduct,
@@ -104,9 +105,9 @@ const CartContextProvider = (props) => {
   };
 
   return (
-    <CardContext.Provider value={cardContext}>
-      {props.children}
-    </CardContext.Provider>
+    <CartContext.Provider value={cartContext}>
+      {children}
+    </CartContext.Provider>
   );
 };
 

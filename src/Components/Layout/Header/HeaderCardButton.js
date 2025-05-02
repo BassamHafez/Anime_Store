@@ -31,7 +31,7 @@ const HeaderCardButton = (props) => {
 
   return (
     <button className={`${btnClasses} position-relative`} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-     <i className="fa-solid fa-cart-shopping "></i>
+     <i className="fa-solid fa-cart-shopping"></i>
      <span className='ms-2'>your cart</span>
      <span className={`${style.numItems} position-absolute top-0 start-100 translate-middle badge rounded-pill`}>
         {numberOfCartProducts}
